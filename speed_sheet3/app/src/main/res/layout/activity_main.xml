@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SPEED SHEET"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textSize="70dp"
+        android:textColor="@color/white"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgPath"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Does image have a header"
+        android:onClick="itemClicked">
+    </CheckBox>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load Picture"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:onClick="selectImage"
+        android:theme="@style/Theme.AppCompat.Dialog.Alert"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:text="Predict"
+        android:onClick="connectToServer"
+        android:theme="@style/Theme.AppCompat.Dialog.Alert"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text=""
+        android:id="@+id/responseText" />
+
+</LinearLayout>
