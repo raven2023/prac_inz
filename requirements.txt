@@ -1,0 +1,5 @@
+numpy==1.21.5
+opencv_python==4.6.0.66
+scipy==1.7.3
+tensorflow==2.10.0
+Werkzeug==2.0.3
